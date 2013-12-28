@@ -21,19 +21,28 @@ export PATH
 # chmod u+x Caskfile
 # ./Caskfile
 
-# Install Pathogen for vim
+# Open Hemisu with terminal
+# It's up to you to set it as a default
+# I also change the font to monoco 10 and turn off antialiased text
+open ./terminal/colors/Hemisu\ Dark.terminal
+
+rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.swp" \
+      --exclude "bootstrap.sh" --exclude "Brewfile" --exclude "Caskfile" \
+      --exclude "OSX" --exclude "README.md" --exclude "terminal/" \
+      --exclude ".gitmodules" -av --no-perms . ~
+
+# Install Pathogen for vim, not a submodule because I don't want extra files
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors;
 curl -Sso ~/.vim/autoload/pathogen.vim \
      https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-
-rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.swp" \
-      --exclude "bootstrap.sh" --exclude "Brewfile" --exclude "Caskfile" \
-      --exclude "OSX" -av --no-perms . ~
+# Install Hemisu for vim
+curl -Sso ~/.vim/colors/hemisu.vim \
+     https://raw.github.com/noahfrederick/vim-hemisu/master/colors/hemisu.vim
 
 PATH="$ORIGPATH"
 
 # Some sensible os defaults
-chmod u+x OSX
-./OSX
+# chmod u+x OSX
+# ./OSX
 

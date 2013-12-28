@@ -1,0 +1,12 @@
+[submodule "terminal/colors"]
+	path = terminal/colors
+	url = git@github.com:noahfrederick/Hemisu-Terminal-app.git
+[submodule ".vim/bundle/vim-nerdtree"]
+	path = .vim/bundle/vim-nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-rails"]
+	path = .vim/bundle/vim-rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule ".vim/bundle/vim-easygrep"]
+	path = .vim/bundle/vim-easygrep
+	url = git@github.com:vim-scripts/EasyGrep.git
