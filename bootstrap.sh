@@ -40,6 +40,14 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
 curl -Sso ~/.vim/colors/hemisu.vim \
      https://raw.github.com/noahfrederick/vim-hemisu/master/colors/hemisu.vim
 
+# Switch the fugly MacVim icon to something nicer
+target=$(find /opt/homebrew-cask/Caskroom -name MacVim.app 2> /dev/null | sort | tail -n 1)
+path="$target/Contents/Resources/"
+
+wget -O /tmp/MacVim.icns http://dribbble.com/shots/337065-MacVim-Icon-Updated/attachments/15582
+cp /tmp/MacVim.icns $path
+rm /tmp/MacVim.icns
+
 PATH="$ORIGPATH"
 
 # Some sensible os defaults

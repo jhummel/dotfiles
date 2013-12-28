@@ -4,8 +4,9 @@ update
 # Newest formulae
 upgrade
 
-# Newer vi
+# Common formulae
 install vim --override-system-vi
+install wget
 
 # Install php binary - needed for chalkpress server
 # https://github.com/josegonzalez/homebrew-php
