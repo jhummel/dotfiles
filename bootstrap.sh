@@ -22,9 +22,10 @@ export PATH
 # ./Caskfile
 
 # Install Pathogen for vim
-mkdir -p ~/.vim/autoload ~/.vim/bundle;
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors;
 curl -Sso ~/.vim/autoload/pathogen.vim \
      https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
 
 rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.swp" \
       --exclude "bootstrap.sh" --exclude "Brewfile" --exclude "Caskfile" \
