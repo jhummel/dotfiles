@@ -1,6 +1,0 @@
-[submodule "colors/terminal"]
-	path = colors/terminal
-	url = git@github.com:noahfrederick/Hemisu-Terminal-app.git
-[submodule "colors/vim"]
-	path = colors/vim
-	url = git@github.com:noahfrederick/vim-hemisu.git
