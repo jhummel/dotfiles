@@ -234,6 +234,11 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Then after all that make Chrome the default anyway
 open -a "Google Chrome" --args --make-default-browser
+
+# Make chrome open the standard print dialog
+# Hold option for the Chrome version
+defaults write com.google.Chrome NSUserKeyEquivalents -dict-add 'Print Using System Dialog...' '@p' 'Print...' '~@p'
+
 # Disable send and reply animations in Mail.app
 defaults write com.apple.mail DisableReplyAnimations -bool true
 defaults write com.apple.mail DisableSendAnimations -bool true
@@ -246,7 +251,8 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" -string "@\\
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "Dock" \
         "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" "Terminal" \
-        "Transmission" "Twitter" "iCal"; do
+        "Transmission" "Twitter" "Chrome" "iCal"; do
         killall "${app}" > /dev/null 2>&1
 done
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
