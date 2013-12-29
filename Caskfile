@@ -6,3 +6,4 @@ brew cask install transmit
 brew cask install sequel-pro
 brew cask install firefox
 brew cask install skype
+brew cask install virtualbox
