@@ -8,6 +8,9 @@ upgrade
 install vim --override-system-vi
 install wget
 
+#node
+install nvm
+
 # Install php binary - needed for chalkpress server
 # https://github.com/josegonzalez/homebrew-php
 tap homebrew/dupes
