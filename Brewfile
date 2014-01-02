@@ -8,6 +8,7 @@ upgrade
 install vim --override-system-vi
 install wget
 install mysql
+install imagemagick
 
 #node
 install nvm
