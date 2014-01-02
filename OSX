@@ -249,6 +249,12 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" -string "@\\U21a9"
 
+# Make mysql launch on startup, installed via homebrew
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+
+# Launch MySQL immediately
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "Dock" \
         "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" "Terminal" \
         "Transmission" "Twitter" "Chrome" "iCal"; do

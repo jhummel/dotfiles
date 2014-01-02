@@ -7,9 +7,13 @@ upgrade
 # Common formulae
 install vim --override-system-vi
 install wget
+install mysql
 
 #node
 install nvm
+
+#ruby
+brew install rbenv ruby-build rbenv-gemset
 
 # Install php binary - needed for chalkpress server
 # https://github.com/josegonzalez/homebrew-php
