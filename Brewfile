@@ -10,6 +10,7 @@ install wget
 install mysql
 install imagemagick
 install heroku-toolbelt
+install fontforge ttfautohint
 
 #node
 install nvm
