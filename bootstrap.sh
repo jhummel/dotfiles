@@ -48,6 +48,9 @@ rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.swp" \
 # cp /tmp/MacVim.icns $path
 # rm /tmp/MacVim.icns
 
+# Install npm modules
+# npm install -g yo generator-generator
+
 PATH="$ORIGPATH"
 
 # Some sensible os defaults
