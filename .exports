@@ -21,8 +21,8 @@ export MANPAGER="less -X"
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
 
+# Use homebrew rbenv binary rather than the home directory
+export RBENV_ROOT="/usr/local/var/rbenv"
+
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-# Use homebrew directories instead of ~/.rbenv 
-export RBENV_ROOT=/usr/local/var/rbenv

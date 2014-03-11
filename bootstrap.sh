@@ -49,7 +49,7 @@ rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.swp" \
 # rm /tmp/MacVim.icns
 
 # Install npm modules
-# npm install -g yo generator-generator
+# npm install -g yo browserify generator-generator
 
 PATH="$ORIGPATH"
 
