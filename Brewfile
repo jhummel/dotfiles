@@ -8,6 +8,7 @@ upgrade
 install vim --override-system-vi
 install wget
 install mysql
+install postgres
 install imagemagick
 install heroku-toolbelt
 install fontforge ttfautohint
