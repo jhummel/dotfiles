@@ -52,8 +52,9 @@ rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.swp" \
 # npm install -g yo browserify generator-generator
 
 # Install the Heroku CLI
-wget -qO- https://toolbelt.heroku.com/install.sh | sh
-
+# We don't want the whole toolbelt
+#wget -qO- https://toolbelt.heroku.com/install.sh | sh
+echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.path
 PATH="$ORIGPATH"
 
 # Some sensible os defaults
