@@ -15,3 +15,12 @@ Thumbs.db
 
 # extra dotfile
 .extra
+
+# sass cache
+.sass-cache
+
+# node
+node_modules
+
+# Chalkpress
+env-config.php
