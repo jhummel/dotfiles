@@ -10,13 +10,14 @@ install wget
 install mysql
 install postgres
 install imagemagick
+install heroku-toolbelt
 install fontforge ttfautohint
 
 #node
 install nvm
 
 #ruby
-brew install rbenv ruby-build rbenv-gemset
+brew install rbenv rbenv-gem-rehash ruby-build rbenv-gemset
 
 # Install php binary - needed for chalkpress server
 # https://github.com/josegonzalez/homebrew-php
