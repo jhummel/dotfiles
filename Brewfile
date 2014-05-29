@@ -16,14 +16,15 @@ install fontforge ttfautohint
 #node
 install nvm
 
-#ruby
-brew install rbenv rbenv-gem-rehash ruby-build rbenv-gemset
-
 # Install php binary - needed for chalkpress server
 # https://github.com/josegonzalez/homebrew-php
 tap homebrew/dupes
 tap josegonzalez/homebrew-php
 install php54
+
+# Install gcc since it's no longer bundled with OSX
+brew tap homebrew/versions
+brew install gcc46
 
 # Install cask for native apps
 # https://github.com/phinze/homebrew-cask
