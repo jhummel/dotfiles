@@ -10,7 +10,7 @@ brew cask install virtualbox
 brew cask install minecraft
 brew cask install slack
 brew cask install pgadmin3
-brew cask install equartz
+brew cask install xquartz
 brew cask install qlcolorcode 
 brew cask install qlstephen
 brew cask install qlmarkdown
