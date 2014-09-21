@@ -1,23 +1,21 @@
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install macvim
-brew cask install transmit
-brew cask install sequel-pro
-brew cask install firefox
-brew cask install skype
-brew cask install virtualbox
-brew cask install minecraft
-brew cask install slack
-brew cask install pgadmin3
-brew cask install xquartz
-brew cask install qlcolorcode 
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install qlprettypatch
-brew cask install quicklook-csv
-brew cask install betterzipql
-brew cask install webp-quicklook
-brew cask install suspicious-package
-brew cask install steam
+cask install dropbox
+cask install google-chrome
+cask install macvim
+cask install transmit
+cask install sequel-pro
+cask install firefox
+cask install skype
+cask install virtualbox
+cask install minecraft
+cask install slack
+cask install pgadmin3
+cask install qlcolorcode 
+cask install qlstephen
+cask install qlmarkdown
+cask install quicklook-json
+cask install qlprettypatch
+cask install quicklook-csv
+cask install betterzipql
+cask install webp-quicklook
+cask install suspicious-package
+cask install steam

@@ -23,13 +23,12 @@ tap josegonzalez/homebrew-php
 install php54
 
 # Install gcc since it's no longer bundled with OSX
-brew tap homebrew/versions
-brew install gcc46
+# brew tap homebrew/versions
+# install gcc46
 
 # Install cask for native apps
 # https://github.com/phinze/homebrew-cask
-tap phinze/homebrew-cask
-install brew-cask
+install caskroom/cask/brew-cask
 
 # Remove outdated versions
 cleanup
